@@ -1,0 +1,81 @@
+body{
+    background-color: aquamarine;
+    margin: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    color: #26abde;
+}
+.container{
+    background-color: black;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    position:inherit;
+    height: auto;
+    width: 60vw;
+    border-radius: 15px;
+    border: none;
+    margin: auto;
+}
+.virtual-keyboard .row{
+    text-align: center;
+    margin: 0 0 15px;
+    display: block;
+    width: 60vw;
+}
+
+.virtual-keyboard .row .spacebar input{
+    padding: 10px 200px;
+    width: 100px;
+    display: block;
+}
+
+.virtual-keyboard input[type='button'] {
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 3px solid #202c2b;
+    background: #13ab9e;
+    color: white;
+    text-transform: uppercase;
+}
+
+.virtual-keyboard input[type='button'].shift-activated {
+    background: red;
+}
+
+.virtual-keyboard input[type='button'].delete, .virtual-keyboard input[type='button'].shift {
+    text-transform: none;
+}
+
+.output{
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    border-radius: 15px;
+    border: none;
+}
+
+.output input{
+    color: white;
+    background: black;
+    border: 0px;
+    line-height: 2.2em;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+}
+
+.output input:focus{
+    outline: none;
+    border: 0px;
+}
+
+.output::-webkit-input-placeholder{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
